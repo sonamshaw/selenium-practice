@@ -12,7 +12,6 @@ public class MakemyTripAutomation {
 	public static void main(String[]args) throws IOException{
 		System.setProperty("webdriver.gecko.driver", "/home/swapan/Downloads/geckodriver");
 		WebDriver driver=new FirefoxDriver();
-		//driver.manage().window().maximize();
 		driver.get("https://www.makemytrip.com/");
 		Utility.captureScreenShot(driver, "makeMytrip Home Page");
 		driver.findElement(By.id("header_tab_hotels")).click();
